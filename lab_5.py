@@ -54,5 +54,4 @@ def translate(sentence, dictionary):
     for word in words:
         print(dictionary.get(word, word), " ", end="")
 
-
 main()
