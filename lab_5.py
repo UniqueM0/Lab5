@@ -14,45 +14,8 @@ loop through each words, find the key matching the word and returns back
 the value tied to the word in our dictionary.
 
 After each word is translated, we then
-print out the translated sentence to the user.
-"""
-
+print out the translated sentence to the user..
 
 """
-main():
-set sentence = input()
-    set dictionary = translate()
-    translate(sentence, dictionary)
-
-translate(sentence, dictionary):
-    words = for each of the word in the sentence,
-    for each words, translate the word 
-    print translated sentence to user
-
-create_dictionary():
-    read in textese.txt
-    create list = each line from file
-    close the file
-    create a dict off of the list
-    return the dict
-
-main()
-"""
-
-def main():
-    sentence = input("Enter a sentence: ")
-    dictionary = create_dictionary("Textese.txt")
-    translate(sentence, dictionary)
-def create_dictionary(txt_file):
-    infile = open(txt_file, "r")
-    words = [word.rstrip() for word in infile]
-    infile.close()
-    return dict([word.split(",") for word in words])
-    
-def translate(sentence, dictionary):
-    words = sentence.split()
-    for word in words:
-        print(dictionary.get(word, word), " ", end="")
 
 
-main()
